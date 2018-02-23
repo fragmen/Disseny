@@ -1,21 +1,4 @@
-#content{
-    display: flex;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    
-    -webkit-justify-content: space-around;
-    -moz-justify-content: space-around;
-    -ms-justify-content: space-around;
-    justify-content: space-around;
 
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-
-    border: 1px solid black;
-}
 #a{
     display: flex;
     display: -webkit-flex;
