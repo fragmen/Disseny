@@ -1,0 +1,219 @@
+@font-face{
+    font-family: Libre Baskerville;
+    src:url(fonts/LibreBaskerville-Regular.ttf);
+}
+
+@font-face{
+    font-family: Libre Baskerville talic;
+    src:url(fonts/LibreBaskerville-Italic.ttf);
+}
+
+@font-face{
+    font-family: Montserrat;
+    src:url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face{
+    font-family: Montserrat Vold;
+    src:url(fonts/Montserrat-Bold.ttf);
+}
+
+@font-face{
+    font-family: Open Sans Light;
+    src:url(fonts/OpenSans-Light.ttf);
+}
+
+#Carrousel{
+    border: 1px solid black;
+    position: relative;
+    height: 300px;
+}
+#Carrousel img{
+    height: 300px;
+    width: 100%;
+    max-height: 300px;
+}
+
+.left-arrow{
+    margin-top: 120px;
+    margin-left: 150px;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border :2px solid #fff;
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.right-arrow{
+    margin-top: 120px;
+    margin-right: 150px;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border :2px solid #fff;
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.glyphicon-arrow-left{
+    color: #bf8e51;
+    transform: rotate(45deg);
+}
+.glyphicon-arrow-right{
+    color: #bf8e51;
+    transform: rotate(45deg);
+}
+
+#carrousel_titol{
+    margin-top: 100px;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 65%;
+    position: absolute;
+    z-index: 20;
+}
+#carrousel_titol h1{
+    margin-left: 320px;
+    display: block;
+    max-width: 830px;
+    margin: 0px auto;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat",sans-serif;
+    font-size: 70px;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+}
+
+.fa-long-arrow-right{
+    padding-left: 15px;
+}
+
+#header{
+    height: 70px;   
+}
+
+.navbar-inverse{
+    border-radius: 0;
+    height: 70px;
+    border-bottom: 4px solid #bf8e51;
+    background-color: red;
+}
+
+.navbar-nav{
+    background: rgba(0, 0, 0, 0);
+}
+
+.navbar-nav > li > a {
+    color: white;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Montserrat",sans-serif;
+}
+
+.navbar-nav > li > a::after {
+    content: "◆";
+    font-size: 10px;
+    position: absolute;
+    right: -4px;
+    top: 15px;
+    z-index: 10;
+    
+}
+.navbar-nav > li > a::after {
+    color: #bf8e51;
+}
+.navbar-nav a{
+    margin-top: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+.navbar-header{
+    padding-right: 300px;
+}
+.navbar-header img{
+    height: 100px;
+    width: 100%;
+}
+
+.navbar-header a{
+    margin-top: 25px;
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    font-family: "Montserrat",sans-serif;
+    text-decoration: none;
+}
+
+#menu{
+    margin-top: 50px;
+}
+
+#seccio{
+    margin-bottom: 20px;
+}
+
+#seccio_video{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 20px;
+    border-bottom: 1px solid #EEE;
+    position: relative;
+}
+
+#seccio_video iframe{
+    border-bottom: 3px solid #bf8e51;
+}
+
+.titol_seccio{
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Montserrat Vold",sans-serif;
+    font-size: 18px;
+}
+
+.text_seccio{
+    margin-top: 20px;
+    font-family: "Libre Baskerville", sans-serif;
+    color: grey;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.enllas{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border: 2px solid black;
+    color: black;
+    padding: 15px;
+    max-width: 300px;
+    margin: 0px auto;
+    font-family: "Montserrat",sans-serif;
+    margin-bottom: 20px;
+}
+
+.enllas:hover{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border: 2px solid black;
+    color: white;
+    background-color: #bf8e51;
+    padding: 15px;
+    max-width: 300px;
+    margin: 0px auto;
+    font-family: "Montserrat",sans-serif;
+    margin-bottom: 20px;
+}
