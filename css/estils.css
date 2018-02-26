@@ -1,26 +1,34 @@
 
 #a{
-    display: flex;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    
-    -webkit-justify-content: space-around;
-    -moz-justify-content: space-around;
-    -ms-justify-content: space-around;
-    justify-content: space-around;
-
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-    
     height: 150px;
     width: 150px;
-    border: 1px solid black;
+   
     
 }
-#b{
+#e{
+    height: 150px;
+    width: 150px;
+   
+    
+}
+#i{ 
+    height: 150px;
+    width: 150px;
+   
+    
+}
+#o{ 
+    height: 150px;
+    width: 150px;
+   
+}
+#u{
+    height: 150px;
+    width: 150px;
+   
+}
+
+.lletres{
     display: flex;
     display: -webkit-flex;
     display: -moz-flex;
@@ -36,50 +44,14 @@
     -ms-align-items: center;
     align-items: center;
     
-    height: 50px;
-    width: 50px;
-    border: 1px solid black;
+    font-family: 'Indie Flower', cursive;
+    font-size: 75px;
+        
+    border-radius: 50%;
+    width: 200px;
+    height: 200px; 
+    background-color: yellow;
     
+    cursor: url(../img/speaker.png), auto;
 }
-#c{
-    display: flex;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    
-    -webkit-justify-content: space-around;
-    -moz-justify-content: space-around;
-    -ms-justify-content: space-around;
-    justify-content: space-around;
 
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-    
-    height: 50px;
-    width: 50px;
-    border: 1px solid black;
-    
-}
-#d{
-    display: flex;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    
-    -webkit-justify-content: space-around;
-    -moz-justify-content: space-around;
-    -ms-justify-content: space-around;
-    justify-content: space-around;
-
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-    
-    height: 50px;
-    width: 50px;
-    border: 1px solid black;
-    
-}

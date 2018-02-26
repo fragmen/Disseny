@@ -1,0 +1,106 @@
+.animalcontent{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    
+     -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+}
+.contentSo{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+   
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+}
+.animal{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    
+    width: 250px;
+    height: 250px; 
+    
+    margin-top: 25px;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nom{
+    margin-top: 10px;
+    text-align: center;
+    width: 75%;
+}
+
+.so{
+    width: 25px;
+    height: 25px;
+    
+    background-image: url(../img/speaker.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    margin-right: 10px;
+    cursor: url(../img/speaker.png), auto;
+}
+
+#caball{
+    background-image: url(../img/caball.png);
+}
+#conill{
+    background-image: url(../img/conill.png);
+}
+#elefant{
+    background-image: url(../img/elefant.png);
+}
+#girafa{
+    background-image: url(../img/girafa.png);
+}
+#os{
+    background-image: url(../img/os.png);
+}
+#panda{
+    background-image: url(../img/panda.png);
+}
+#porc{
+    background-image: url(../img/porc.png);
+}
+#tigr{
+    background-image: url(../img/tigre.png);
+}
+#tortuga{
+    background-image: url(../img/tortuga.png);
+}
