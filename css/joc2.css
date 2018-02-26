@@ -74,7 +74,7 @@
     background-position: center;
     
     margin-right: 10px;
-    cursor: url(../img/speaker.png), auto;
+    cursor: pointer;
 }
 
 #caball{
