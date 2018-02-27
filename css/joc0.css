@@ -1,0 +1,194 @@
+.contenidor{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+    
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    width: 175px;
+    
+    
+}
+.lletres{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    
+    font-family: 'Indie Flower', cursive;
+    font-size: 75px;
+        
+    border-radius: 50%;
+    width: 175px;
+    height: 200px; 
+    background-color: yellow;
+    
+    cursor: url(../img/speaker.png), auto;
+}
+.dropDiv{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    width: 175px; 
+    height: 400px;
+    
+    border: 1px solid black;
+    border-top: none;
+    margin-bottom: 15px;
+}
+
+
+#a{
+    height: 150px;
+    width: 150px;
+   
+    
+}
+#e{
+    height: 150px;
+    width: 150px;
+   
+    
+}
+#i{ 
+    height: 150px;
+    width: 150px;
+   
+    
+}
+#o{ 
+    height: 150px;
+    width: 150px;
+   
+}
+#u{
+    height: 150px;
+    width: 150px;
+   
+}
+
+.objectsContent{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    width: 100%;
+    height: 215px; 
+    border: 1px solid black;
+    
+}
+
+
+
+.imageDD{
+    width: 100px;
+    height: 100px; 
+    
+    border-top: 5px;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    cursor: move;
+}
+
+#abella{
+    background-image: url(../img/abella.png);
+}
+#all{
+    background-image: url(../img/all.png);
+}
+#araña{
+    background-image: url(../img/araña.png);
+}
+#elefant{
+    background-image: url(../img/elefant.png);
+}
+#escala{
+    background-image: url(../img/escala.png);
+}
+#espasa{
+    background-image: url(../img/espasa.png);
+}
+#estrella{
+    background-image: url(../img/estrella.png);
+}
+#illa{
+    background-image: url(../img/illa.png);
+}
+#imant{
+    background-image: url(../img/imant.png);
+}
+#olla{
+    background-image: url(../img/olla.png);
+}
+#os{
+    background-image: url(../img/os.png);
+}
+#ou{
+    background-image: url(../img/ou.png);
+}
+#ull{
+    background-image: url(../img/ull.png);
+}
+#ulleres{
+    background-image: url(../img/ulleres.png);
+}

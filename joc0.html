@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-    <link type="text/css" rel="stylesheet" href="estils.css" media="screen" />
-    <link type="text/css" rel="stylesheet" href="reset.css" media="screen" />
+    
+    <link type="text/css" rel="stylesheet" href="estils.css"    media="screen" />
+    <link type="text/css" rel="stylesheet" href="reset.css"     media="screen" />
+    <link type="text/css" rel="stylesheet" href="css/joc0.css"  media="screen"/>
+    
     <link href="fonts/font-awesome-4.4.0/css/font-awesome.css" rel="stylesheet" />
-    <link href="css/estils.css" rel="stylesheet" type="text/css"/>
+    
+    
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/joc1.js"></script>
+    <script type="text/javascript" src="js/drag_drop.js"></script>
+    
     
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
 
@@ -73,12 +79,47 @@
                     <source src="audios/u.mp3" type="audio/mpeg">
                 </audio>
                 
-                <div class="lletres" id="a" onclick="playAudioA()">A</div>
-                <div class="lletres" id="e" onclick="playAudioE()">E</div>
-                <div class="lletres" id="i" onclick="playAudioI()">I</div>
-                <div class="lletres" id="o" onclick="playAudioO()">O</div>
-                <div class="lletres" id="u" onclick="playAudioU()">U</div>
-            </div>  
+                <div class="contenidor">
+                    <div class="lletres" id="a" onclick="playAudioA()">A</div>
+                    <div class="dropDiv" id="contentDragA" vocal="a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="contenidor">
+                    <div class="lletres" id="e" onclick="playAudioE()">E</div>
+                    <div class="dropDiv" id="contentDragE" vocal="e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="conteclassnidor">
+                    <div class="lletres" id="i" onclick="playAudioI()">I</div>
+                    <div class="dropDiv" id="contentDragI" vocal="i" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="contenidor">
+                   <div class="lletres" id="o" onclick="playAudioO()">O</div> 
+                   <div class="dropDiv" id="contentDragO" vocal="o" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="contenidor">
+                   <div class="lletres" id="u" onclick="playAudioU()">U</div> 
+                   <div class="dropDiv" id="contentDragU" vocal="u" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="objectsContent" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div id="abella"    class="imageDD" vocal="a"   ondragstart="drag(event)" ></div>
+                    <div id="all"       class="imageDD" vocal="a"   ondragstart="drag(event)"></div>
+                    <div id="araña"     class="imageDD" vocal="a"   ondragstart="drag(event)"></div>
+                    
+                    <!--<div id="elefant"   class="imageDD" vocal="e" ondragstart="drag(event)"></div>-->
+                    <div id="escala"    class="imageDD" vocal="e" ondragstart="drag(event)"></div>
+                    <div id="espasa"    class="imageDD" vocal="e" ondragstart="drag(event)"></div>
+                    <div id="estrella"  class="imageDD" vocal="e"  ondragstart="drag(event)"></div>
+                    
+                    <div id="illa"      class="imageDD" vocal="i"  ondragstart="drag(event)"></div>
+                    <div id="imant"     class="imageDD" vocal="i"  ondragstart="drag(event)"></div>
+                    
+                    <div id="olla"      class="imageDD" vocal="o"  ondragstart="drag(event)"></div>
+                    <div id="os"        class="imageDD" vocal="o"  ondragstart="drag(event)"></div>
+                    <div id="ou"        class="imageDD" vocal="o"  ondragstart="drag(event)"></div>
+                    
+                    <div id="ull"       class="imageDD" vocal="u"  ondragstart="drag(event)"></div>
+                    <div id="ulleres"   class="imageDD" vocal="u"  ondragstart="drag(event)"></div>
+                </div>
+            </div>
         </div>
         <footer id="footer"></footer>
     </div>

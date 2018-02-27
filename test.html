@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="js/drag_drop.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/joc0.css"  media="screen"/>
+        
+        <style>
+            #div1, #div2, #div3 {
+                float: left;
+                width: 100px;
+                height: 105px;
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h2>Drag and Drop</h2>
+        <p>Drag the image back and forth between the two div elements.</p>
+
+        <div id="div1" class="a e" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="img_w3slogo.gif" draggable="true" ondragstart="drag(event)" id="drag1" vocal="a" alt="image1" width="88" height="31">
+            <img src="img_w3slogo.gif" draggable="true" ondragstart="drag(event)" id="drag2" vocal="e" alt="image2" width="88" height="31">
+            <div id="abella" class="imageDD" vocal="a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+        <div id="div2" vocal="a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div3" vocal="e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    </body>
+</html>
