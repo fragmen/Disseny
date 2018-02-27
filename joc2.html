@@ -12,12 +12,58 @@
     <link href="css/estils.css" rel="stylesheet" type="text/css"/>
     <link href="css/joc2.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/joc1.js"></script>
+    <script type="text/javascript" src="js/audio.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
+    <audio class="audios" id="audioOs"  preload="none"> 
+        <source src="audios/os.ogg" type="audio/ogg">
+    </audio>
+    <audio class="audios" id="audioPorc"  preload="none"> 
+        <source src="audios/porc.ogg" type="audio/ogg">
+    </audio>
+    <audio class="audios" id="audioGirafa"  preload="none"> 
+        <source src="audios/girafa.ogg" type="audio/ogg">
+    </audio>
+    <audio class="audios" id="audioOsPanda"  preload="none"> 
+        <source src="audios/os_panda.ogg" type="audio/ogg">
+    </audio>
+    <audio class="audios" id="audioCunill"  preload="none"> 
+        <source src="audios/cunill.ogg" type="audio/ogg">
+    </audio>
+    <audio class="audios" id="audioCaball"  preload="none"> 
+        <source src="audios/caball.ogg" type="audio/ogg">
+    </audio>
+    <audio class="audios" id="audioElefant"  preload="none"> 
+        <source src="audios/elefant.ogg" type="audio/ogg">
+    </audio>
+    <audio class="audios" id="audioTigre"  preload="none"> 
+        <source src="audios/tigre.ogg" type="audio/ogg">
+    </audio>
+    <audio class="audios" id="audioTortuga"  preload="none"> 
+        <source src="audios/tortuga.ogg" type="audio/ogg">
+    </audio>
+    
+    
+    <audio class="audios" id="audioHorse"  preload="none"> 
+        <source src="audios/horse.mp3" type="audio/mp3">
+    </audio>
+    <audio class="audios" id="audioSoOs"  preload="none"> 
+        <source src="audios/oso.mp3" type="audio/mp3">
+    </audio>
+    <audio class="audios" id="audioSoTigre"  preload="none"> 
+        <source src="audios/tigre.wav" type="audio/wav">
+    </audio>
+    <audio class="audios" id="audioSoElefant"  preload="none"> 
+        <source src="audios/elefant.wav" type="audio/wav">
+    </audio>
+    <audio class="audios" id="audioSoPorc"  preload="none"> 
+        <source src="audios/cerdo.wav" type="audio/wav">
+    </audio>
+    
+    
     <div id="contenidor_principal">
         <header id="header">
             <div class="navbar navbar-inverse" role="navigation">
@@ -54,73 +100,74 @@
             </div>
         </header>
         <div id="center">
+            
             <div id="content">
                 <div class="animalcontent">
                     <div class="animal" id="caball"></div>
                     <div class="nom">Caball</div>              
                     <div class="contentSo">
-                        <div class="so" id="nomCaball"></div>
-                        <div class="so" id="soCaball"></div>
+                        <div class="so" onclick="playAudio('Caball')" id="nomCaball"></div>
+                        <div class="so" onclick="playAudio('Horse')" id="soCaball"></div>
                     </div>
                 </div>
                 <div class="animalcontent">
                     <div class="animal" id="conill"></div>
                     <div class="nom">Conill</div>  
                     <div class="contentSo">
-                        <div class="so" id="nomConill"></div>
+                        <div class="so" onclick="playAudio('Cunill')" id="nomConill"></div>
                     </div>
                 </div>
                 <div class="animalcontent">
                     <div class="animal" id="elefant"></div>
                     <div class="nom">Elefant</div>
                     <div class="contentSo">
-                        <div class="so" id="nomElefant"></div>
-                        <div class="so" id="soElefant"></div>
+                        <div class="so" onclick="playAudio('Elefant')" id="nomElefant"></div>
+                        <div class="so" onclick="playAudio('SoElefant')" id="soElefant"></div>
                     </div>
                 </div>
                 <div class="animalcontent">
                     <div class="animal" id="girafa"></div>
                     <div class="nom">Girafa</div> 
                     <div class="contentSo">
-                        <div class="so" id="nomGirafa"></div>
+                        <div class="so"  onclick="playAudio('Girafa')"id="nomGirafa"></div>
                     </div>
                 </div>
                 <div class="animalcontent">
                     <div class="animal" id="os"></div>
                     <div class="nom">Os</div> 
                     <div class="contentSo">
-                        <div class="so" id="nomOs"></div>
-                        <div class="so" id="soOs"></div>
+                        <div class="so" onclick="playAudio('Os')" id="nomOs"></div>
+                        <div class="so" onclick="playAudio('SoOs')" id="soOs"></div>
                     </div>
                 </div>
                 <div class="animalcontent">
                     <div class="animal" id="panda"></div>
                     <div class="nom">Os panda</div> 
                     <div class="contentSo">
-                        <div class="so" id="nomPanda"></div>
+                        <div class="so" onclick="playAudio('OsPanda')" id="nomPanda"></div>
                     </div>
                 </div>
                 <div class="animalcontent">
                     <div class="animal" id="porc"></div>
                     <div class="nom">Porc</div> 
                     <div class="contentSo">
-                        <div class="so" id="nomPorc"></div>
-                        <div class="so" id="soPorc"></div>
+                        <div class="so" onclick="playAudio('Porc')" id="nomPorc"></div>
+                        <div class="so" onclick="playAudio('SoPorc')" id="soPorc"></div>
                     </div>
                 </div>
                 <div class="animalcontent">
                     <div class="animal" id="tigr"></div>
                     <div class="nom">Tigre</div> 
                     <div class="contentSo">
-                        <div class="so" id="nomTigre"></div>
-                        <div class="so" id="soTigre"></div>
+                        <div class="so" onclick="playAudio('Tigre')" id="nomTigre"></div>
+                        <div class="so" onclick="playAudio('SoTigre')" id="soTigre"></div>
                     </div>
                 </div>
                 <div class="animalcontent">
                      <div class="animal" id="tortuga"></div>
                     <div class="nom">Tortuga</div>  
                     <div class="contentSo">
-                        <div class="so" id="nomTortuga"></div>
+                        <div class="so" onclick="playAudio('Tortuga')" id="nomTortuga"></div>
                     </div>
                 </div>
             </div>

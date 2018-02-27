@@ -11,7 +11,7 @@
     <link href="fonts/font-awesome-4.4.0/css/font-awesome.css" rel="stylesheet" />
     <link href="css/estils.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/joc1.js"></script>
+    <script type="text/javascript" src="js/audio.js"></script>
     
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
 
@@ -58,26 +58,26 @@
 
             <div id="content">
                 <audio class="audios" id="audioA"  preload="none"> 
-                    <source src="audios/a.mp3" type="audio/mpeg">
+                    <source src="audios/a.ogg" type="audio/ogg">
                 </audio>
                 <audio class="audios" id="audioE"  preload="none"> 
-                    <source src="audios/e.mp3" type="audio/mpeg">
+                    <source src="audios/e.ogg" type="audio/ogg">
                 </audio>
                 <audio class="audios" id="audioI"  preload="none"> 
-                    <source src="audios/i.mp3" type="audio/mpeg">
+                    <source src="audios/i.ogg" type="audio/ogg">
                 </audio>
                 <audio class="audios" id="audioO"  preload="none"> 
-                    <source src="audios/o.mp3" type="audio/mpeg">
+                    <source src="audios/o.ogg" type="audio/ogg">
                 </audio>
                 <audio class="audios" id="audioU"  preload="none"> 
-                    <source src="audios/u.mp3" type="audio/mpeg">
+                    <source src="audios/u.ogg" type="audio/ogg">
                 </audio>
                 
-                <div class="lletres" id="a" onclick="playAudioA()">A</div>
-                <div class="lletres" id="e" onclick="playAudioE()">E</div>
-                <div class="lletres" id="i" onclick="playAudioI()">I</div>
-                <div class="lletres" id="o" onclick="playAudioO()">O</div>
-                <div class="lletres" id="u" onclick="playAudioU()">U</div>
+                <div class="lletres" id="a" onclick="playAudio('A')">A</div>
+                <div class="lletres" id="e" onclick="playAudio('E')">E</div>
+                <div class="lletres" id="i" onclick="playAudio('I')">I</div>
+                <div class="lletres" id="o" onclick="playAudio('O')">O</div>
+                <div class="lletres" id="u" onclick="playAudio('U')">U</div>
             </div>  
         </div>
         <footer id="footer"></footer>
