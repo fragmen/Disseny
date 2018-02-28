@@ -55,3 +55,28 @@
     cursor: url(../img/speaker.png), auto;
 }
 
+#footer{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    background-color: #333;
+}
+
+#footer img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    float: right;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #9d9d9d;
+    font-family: "Montserrat",sans-serif;
+}
+
+#footer a:hover{
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat",sans-serif;
+}

@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    
     <link type="text/css" rel="stylesheet" href="estils.css" media="screen" />
     <link type="text/css" rel="stylesheet" href="reset.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="css/estils.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="css/joc1.css" media="screen" />
+    
     <link href="fonts/font-awesome-4.4.0/css/font-awesome.css" rel="stylesheet" />
-    <link href="css/estils.css" rel="stylesheet" type="text/css"/>
+    
+    
+    
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/joc1.js"></script>
 
@@ -52,8 +58,194 @@
                 </div>
             </div>
         </header>
-        <div id="center"></div>
-        <footer id="footer"></footer>
+        <div id="center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="explicacio">
+                            <p>Explicacio del joc</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-6">
+                        <div id="ca">
+                            <div id="imatge_joc1">
+                                <img src="img/joc1/casa.jpg">
+                            </div>
+                            <div id="lletres1_joc1" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+                                <div id="lletres1_opcio4" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    S
+                                </div>
+                                <div id="lletres1_opcio3" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    A
+                                </div>
+                                <div id="lletres1_opcio1" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    C
+                                </div>
+                                <div id="lletres1_opcio2" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    A
+                                </div>
+                            </div>
+                            <div id="resposta1_joc1" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+                                <div id="resposta1_1" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta1_2" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta1_3" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta1_4" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                        <div id="ca">
+                            <div id="imatge_joc1">
+                                <img src="img/joc1/perro.jpg">
+                            </div>
+                            <div id="lletres2_joc1" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+                                <div id="lletres2_opcio3" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    S
+                                </div>
+                                <div id="lletres2_opcio2" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    O
+                                </div>
+                                <div id="lletres2_opcio1" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    G
+                                </div>
+                            </div>
+                            <div id="resposta2_joc1" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+                                <div id="resposta2_1" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta2_2" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta2_3" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-6">
+                        <div id="ca">
+                            <div id="imatge_joc1">
+                                <img src="img/joc1/coche.jpg">
+                            </div>
+                            <div id="lletres3_joc1" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+                                <div id="lletres3_opcio1" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    C
+                                </div>
+                                <div id="lletres3_opcio4" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    X
+                                </div>
+                                <div id="lletres3_opcio2" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    O
+                                </div>
+                                <div id="lletres3_opcio5" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    E
+                                </div>
+                                <div id="lletres3_opcio3" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    T
+                                </div>
+                            </div>
+                            <div id="resposta3_joc1" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+                                <div id="resposta3_1" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta3_2" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta3_3" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta3_4" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta3_5" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                        <div id="ca">
+                            <div id="imatge_joc1">
+                                <img src="img/joc1/verano.png">
+                            </div>
+                            <div id="lletres4_joc1" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+                                <div id="lletres4_opcio4" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    I
+                                </div>
+                                <div id="lletres4_opcio1" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    E
+                                </div>
+                                <div id="lletres4_opcio2" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    S
+                                </div>
+                                <div id="lletres4_opcio5" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    U
+                                </div>
+                                <div id="lletres4_opcio3" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    T
+                                </div>
+                            </div>
+                            <div id="resposta4_joc1" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+                                <div id="resposta4_1" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta4_2" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta4_3" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta4_4" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta4_5" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-6">
+                        <div id="ca">
+                            <div id="imatge_joc1">
+                                <img src="img/joc1/geografia.jpg">
+                            </div>
+                            <div id="lletres5_joc1" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+                                <div id="lletres5_opcio3" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    N
+                                </div>
+                                <div id="lletres5_opcio1" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    M
+                                </div>
+                                <div id="lletres5_opcio2" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    O
+                                </div>
+                            </div>
+                            <div id="resposta5_joc1" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+                                <div id="resposta5_1" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta5_2" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta5_3" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                        <div id="ca">
+                            <div id="imatge_joc1">
+                                <img src="img/joc1/avion.png">
+                            </div>
+                            <div id="lletres6_joc1" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+                                <div id="lletres6_opcio4" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    V
+                                </div>
+                                <div id="lletres6_opcio3" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    A
+                                </div>
+                                <div id="lletres6_opcio1" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    I
+                                </div>
+                                <div id="lletres6_opcio2" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)">
+                                    Ó
+                                </div>
+                            </div>
+                            <div id="resposta1_joc1" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+                                <div id="resposta6_1" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta6_2" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta6_3" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                                <div id="resposta6_4" draggable="true" ondragstart="return empezar(event)" ondragend="return end(event)"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Llicència de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Aquesta obra està subjecta a una llicència de <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Reconeixement-NoComercial 4.0 Internacional de Creative Commons</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
