@@ -1,93 +1,136 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>RocksttersDev</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-        <link type="text/css" rel="stylesheet" href="estils.css" media="screen" />
-        <link type="text/css" rel="stylesheet" href="reset.css" media="screen" />
-        <link href="fonts/font-awesome-4.4.0/css/font-awesome.css" rel="stylesheet" />
-        <link href="css/estils.css" rel="stylesheet" type="text/css"/>
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/audio.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>RocksttersDev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    
+    <link type="text/css" rel="stylesheet" href="estils.css"    media="screen" />
+    <link type="text/css" rel="stylesheet" href="reset.css"     media="screen" />
+    <link type="text/css" rel="stylesheet" href="css/joc0.css"  media="screen"/>
+    <link type="text/css" rel="stylesheet" href="css/estils.css"  media="screen"/>
+    
+    <link href="fonts/font-awesome-4.4.0/css/font-awesome.css" rel="stylesheet" />
+    
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/joc1.js"></script>
+    <script type="text/javascript" src="js/drag_drop.js"></script>
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
 
-        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <div id="contenidor_principal">
-            <header id="header">
-                <div class="navbar navbar-inverse" role="navigation">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button class="navbar-toggle collapsed" data-target="#navegacio" data-toggle="collapse" type="button">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button> 
-                            <img src="logo/logo.svg" />
-                            <a href="index.html">ROCKSTTERSDEV</a>
-                        </div>
-                        <div class="collapse navbar-collapse" id="navegacio">
-                            <nav class="main-navigation">
-                                <ul class="nav navbar-nav">
-                                    <li>
-                                        <a href="index.html">INICI</a>
-                                    </li>
-                                    <li class="active">
-                                        <a href="joc0.html">Joc0</a>
-                                    </li>
-                                    <li>
-                                        <a href="joc1.html">joc1</a>
-                                    </li>
-                                    <li>
-                                        <a href="joc2.html">joc2</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="contenidor_principal">
+        <header id="header">
+            <div class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle collapsed" data-target="#navegacio" data-toggle="collapse" type="button">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button> 
+                        <img src="logo/logo.svg" />
+                        <a href="index.html">ROCKSTTERSDEV</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navegacio">
+                        <nav class="main-navigation">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="index.html">INICI</a>
+                                </li>
+                                <li class="active">
+                                    <a href="joc0.html">Joc0</a>
+                                </li>
+                                <li>
+                                    <a href="joc1.html">joc1</a>
+                                </li>
+                                <li>
+                                    <a href="joc2.html">joc2</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-            </header>
-            <div id="center">
-                <div id="content">
-                    <audio class="audios" id="audioA"  preload="none"> 
-                        <source src="audios/a.ogg" type="audio/ogg">
-                    </audio>
-                    <audio class="audios" id="audioE"  preload="none"> 
-                        <source src="audios/e.ogg" type="audio/ogg">
-                    </audio>
-                    <audio class="audios" id="audioI"  preload="none"> 
-                        <source src="audios/i.ogg" type="audio/ogg">
-                    </audio>
-                    <audio class="audios" id="audioO"  preload="none"> 
-                        <source src="audios/o.ogg" type="audio/ogg">
-                    </audio>
-                    <audio class="audios" id="audioU"  preload="none"> 
-                        <source src="audios/u.ogg" type="audio/ogg">
-                    </audio>
-
-                    <div class="lletres" id="a" onclick="playAudio('A')">A</div>
-                    <div class="lletres" id="e" onclick="playAudio('E')">E</div>
-                    <div class="lletres" id="i" onclick="playAudio('I')">I</div>
-                    <div class="lletres" id="o" onclick="playAudio('O')">O</div>
-                    <div class="lletres" id="u" onclick="playAudio('U')">U</div>
-                </div>  
             </div>
-            <footer id="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Llicència de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Aquesta obra està subjecta a una llicència de <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Reconeixement-NoComercial 4.0 Internacional de Creative Commons</a>
-                        </div>
+        </header>
+        <div id="center">
+
+            <div id="content">
+                <audio class="audios" id="audioA"  preload="none"> 
+                    <source src="audios/a.mp3" type="audio/mpeg">
+                </audio>
+                <audio class="audios" id="audioE"  preload="none"> 
+                    <source src="audios/e.mp3" type="audio/mpeg">
+                </audio>
+                <audio class="audios" id="audioI"  preload="none"> 
+                    <source src="audios/i.mp3" type="audio/mpeg">
+                </audio>
+                <audio class="audios" id="audioO"  preload="none"> 
+                    <source src="audios/o.mp3" type="audio/mpeg">
+                </audio>
+                <audio class="audios" id="audioU"  preload="none"> 
+                    <source src="audios/u.mp3" type="audio/mpeg">
+                </audio>
+                
+                <div class="contenidor">
+                    <div class="lletres" id="a" onclick="playAudioA()">A</div>
+                    <div class="dropDiv" id="contentDragA" vocal="a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="contenidor">
+                    <div class="lletres" id="e" onclick="playAudioE()">E</div>
+                    <div class="dropDiv" id="contentDragE" vocal="e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="conteclassnidor">
+                    <div class="lletres" id="i" onclick="playAudioI()">I</div>
+                    <div class="dropDiv" id="contentDragI" vocal="i" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="contenidor">
+                   <div class="lletres" id="o" onclick="playAudioO()">O</div> 
+                   <div class="dropDiv" id="contentDragO" vocal="o" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="contenidor">
+                   <div class="lletres" id="u" onclick="playAudioU()">U</div> 
+                   <div class="dropDiv" id="contentDragU" vocal="u" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="objectsContent">
+                    <img src='img/abella.png'   id="abella"    class="imageDD" vocal="a"   ondragstart="drag(event)" >
+                    <img src='img/all.png'   id="all"       class="imageDD" vocal="a"   ondragstart="drag(event)">
+                    <img src='img/arana.png'   id="araña"     class="imageDD" vocal="a"   ondragstart="drag(event)">
+                    
+                    <!--<img id="elefant"   class="imageDD" vocal="e" ondragstart="drag(event)">-->
+                    <img src='img/escala.png'   id="escala"    class="imageDD" vocal="e" ondragstart="drag(event)">
+                    <img src='img/espasa.png'   id="espasa"    class="imageDD" vocal="e" ondragstart="drag(event)">
+                    <img src='img/estrella.png'   id="estrella"  class="imageDD" vocal="e"  ondragstart="drag(event)">
+                    
+                    <img src='img/illa.png'   id="illa"     class="imageDD" vocal="i"  ondragstart="drag(event)">
+                    <img src='img/imant.png'   id="imant"     class="imageDD" vocal="i"  ondragstart="drag(event)">
+                    
+                    <img src='img/olla.png'   id="olla"      class="imageDD" vocal="o"  ondragstart="drag(event)">
+                    <img src='img/os.png'   id="os"        class="imageDD" vocal="o"  ondragstart="drag(event)">
+                    <img src='img/ou.png'   id="ou"        class="imageDD" vocal="o"  ondragstart="drag(event)">
+                    
+                    <img src='img/ull.png'   id="ull"       class="imageDD" vocal="u"  ondragstart="drag(event)">
+                    <img src='img/ulleres.png'   id="ulleres"   class="imageDD" vocal="u"  ondragstart="drag(event)">
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Llicència de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Aquesta obra està subjecta a una llicència de <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Reconeixement-NoComercial 4.0 Internacional de Creative Commons</a>
                     </div>
                 </div>
-            </footer>
-        </div>
-    </body>
+            </div>
+        </footer>
+    </div>
+</body>
 </html>

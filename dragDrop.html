@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="css/joc0.css"  media="screen"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <style>
+
+            #div1 {
+                width: 90%;
+                height: 150px;
+                border: 1px solid #aaaaaa;
+            }
+
+            body{
+                display: flex;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+
+                -webkit-justify-content: space-around;
+                -moz-justify-content: space-around;
+                -ms-justify-content: space-around;
+                justify-content: space-around;
+
+                -webkit-align-items: center;
+                -moz-align-items: center;
+                -ms-align-items: center;
+                align-items: center;
+
+                -webkit-flex-wrap: wrap;
+                -moz-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            }
+        </style>
+        <script>
+            function allowDrop(ev) {
+                ev.preventDefault();
+            }
+
+            function drag(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+
+
+            function drop(ev) {
+                ev.preventDefault();
+
+                var targetId = ev.target.id;
+                var objectId = ev.dataTransfer.getData("text");
+                
+                var objectVocal = $("#" + objectId).attr("vocal");
+                var targetVocal = $("#" + targetId).attr("vocal");
+                
+                var targetClass = $("#" + targetId).attr("class");
+
+                console.log("#" + objectId);
+                console.log("#" + targetId);
+                console.log(objectVocal);
+                console.log(targetVocal);
+                
+                console.log(targetClass);
+                
+                if(targetClass == "dropDiv"){
+                    if (objectVocal == targetVocal) {
+                        ev.target.appendChild(document.getElementById(objectId));
+                    } else {
+                        $("#" + targetId).css({border: ' 2px solid red'});
+                        setTimeout(function () {
+                            $("#" + targetId).css({border: ' 1px solid red'});
+                        }, 400);
+                        setTimeout(function () {
+                            $("#" + targetId).css({border: ' 1px solid black'});
+                        }, 500);
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+
+        <p>Drag the W3Schools image into the rectangle:</p>
+
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <br>
+        <div class="contenidor">
+            <div class="lletres" id="a" onclick="playAudioA()">A</div>
+            <div class="dropDiv" id="contentDragA" vocal="a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="contenidor">
+            <div class="lletres" id="e" onclick="playAudioE()">E</div>
+            <div class="dropDiv" id="contentDragE" vocal="e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="conteclassnidor">
+            <div class="lletres" id="i" onclick="playAudioI()">I</div>
+            <div class="dropDiv" id="contentDragI" vocal="i" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="contenidor">
+            <div class="lletres" id="o" onclick="playAudioO()">O</div> 
+            <div class="dropDiv" id="contentDragO" vocal="o" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="contenidor">
+            <div class="lletres" id="u" onclick="playAudioU()">U</div> 
+            <div class="dropDiv" id="contentDragU" vocal="u" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+        <div class="objectsContent">
+            <img src='img/abella.png'   id="abella"    class="imageDD" vocal="a"   ondragstart="drag(event)" >
+            <img src='img/all.png'   id="all"       class="imageDD" vocal="a"   ondragstart="drag(event)">
+            <img src='img/arana.png'   id="araña"     class="imageDD" vocal="a"   ondragstart="drag(event)">
+
+            <!--<img id="elefant"   class="imageDD" vocal="e" ondragstart="drag(event)">-->
+            <img src='img/escala.png'   id="escala"    class="imageDD" vocal="e" ondragstart="drag(event)">
+            <img src='img/espasa.png'   id="espasa"    class="imageDD" vocal="e" ondragstart="drag(event)">
+            <img src='img/estrella.png'   id="estrella"  class="imageDD" vocal="e"  ondragstart="drag(event)">
+
+            <img src='img/illa.png'   id="illa"     class="imageDD" vocal="i"  ondragstart="drag(event)">
+            <img src='img/imant.png'   id="imant"     class="imageDD" vocal="i"  ondragstart="drag(event)">
+
+            <img src='img/olla.png'   id="olla"      class="imageDD" vocal="o"  ondragstart="drag(event)">
+            <img src='img/os.png'   id="os"        class="imageDD" vocal="o"  ondragstart="drag(event)">
+            <img src='img/ou.png'   id="ou"        class="imageDD" vocal="o"  ondragstart="drag(event)">
+
+            <img src='img/ull.png'   id="ull"       class="imageDD" vocal="u"  ondragstart="drag(event)">
+            <img src='img/ulleres.png'   id="ulleres"   class="imageDD" vocal="u"  ondragstart="drag(event)">
+        </div>
+    </body>
+</html>
