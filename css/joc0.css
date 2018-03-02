@@ -71,7 +71,8 @@
     flex-wrap: wrap;
     
     width: 175px; 
-    height: 400px;
+    min-height: 400px;
+    height: auto;
     
     border: 1px solid black;
     border-top: none;
@@ -140,8 +141,6 @@
 .imageDD{
     width: 100px;
     height: 100px; 
-    
-    border-top: 5px;
     
     background-size: contain;
     background-repeat: no-repeat;
