@@ -1,0 +1,60 @@
+#explicacio{
+    /*border: 1px solid red;*/
+    margin-top: 20px;
+}
+
+#ca{
+	/*border: 1px solid red;*/
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+/*#imatge_joc1{
+    border: 1px solid red;
+}*/
+
+#imatge_joc1 img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-height: 300px;
+    width: 80%;
+}
+
+#lletres1_joc1, #lletres2_joc1, #lletres3_joc1, #lletres4_joc1, #lletres5_joc1, #lletres6_joc1{
+    height: auto;
+    overflow: hidden;
+    display: block;
+    /*border: 1px solid red;*/
+    margin-top: 20px; 
+}
+
+#lletres1_opcio1, #lletres1_opcio2, #lletres1_opcio3, #lletres1_opcio4, #lletres2_opcio1, #lletres2_opcio2, #lletres2_opcio3, #lletres3_opcio1, #lletres3_opcio2, #lletres3_opcio3, #lletres3_opcio4, #lletres3_opcio5, #lletres4_opcio1, #lletres4_opcio2, #lletres4_opcio3, #lletres4_opcio4, #lletres4_opcio5, #lletres4_opcio6, #lletres4_opcio7, #lletres5_opcio1,
+#lletres5_opcio2, #lletres5_opcio3, #lletres6_opcio1, #lletres6_opcio2, #lletres6_opcio3, #lletres6_opcio4{
+    background-color: grey;
+    float: left;
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-family: "Montserrat",sans-serif;
+}
+
+#resposta1_joc1, #resposta2_joc1, #resposta3_joc1, #resposta4_joc1, #resposta5_joc1, #resposta6_joc1{
+    height: auto;
+    overflow: hidden;
+}
+
+#resposta1_1, #resposta1_2, #resposta1_3, #resposta1_4, #resposta2_1, #resposta2_2, #resposta2_3, #resposta2_4, #resposta2_5, #resposta2_6, #resposta2_7, #resposta3_1, #resposta3_2, #resposta3_3, #resposta3_4, #resposta3_5, #resposta4_1, #resposta4_2, #resposta4_3, #resposta4_4, #resposta4_5, #resposta4_6, #resposta4_7, #resposta5_1, #resposta5_2, #resposta5_3, #resposta5_4, #resposta6_1, #resposta6_2, #resposta6_3, #resposta6_4{
+    /*background-color: grey;*/
+    border: 1px solid grey;
+    float: left;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+}
+

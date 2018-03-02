@@ -19,6 +19,8 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     
+    width: 315px;
+    
 }
 .contentSo{
     display: flex;
@@ -77,8 +79,8 @@
     cursor: pointer;
 }
 
-#caball{
-    background-image: url(../img/caball.png);
+#cavall{
+    background-image: url(../img/cavall.png);
 }
 #conill{
     background-image: url(../img/conill.png);
