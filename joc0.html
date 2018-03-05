@@ -16,8 +16,10 @@
     
     
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/joc1.js"></script>
+    
     <script type="text/javascript" src="js/drag_drop.js"></script>
+    <script type="text/javascript" src="js/joc0.js"></script>
+    <script type="text/javascript" src="js/audio.js"></script>
     
     
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
@@ -65,60 +67,68 @@
 
             <div id="content">
                 <audio class="audios" id="audioA"  preload="none"> 
-                    <source src="audios/a.mp3" type="audio/mpeg">
+                    <source src="audios/a.ogg" type="audio/ogg">
                 </audio>
                 <audio class="audios" id="audioE"  preload="none"> 
-                    <source src="audios/e.mp3" type="audio/mpeg">
+                    <source src="audios/e.ogg" type="audio/ogg">
                 </audio>
                 <audio class="audios" id="audioI"  preload="none"> 
-                    <source src="audios/i.mp3" type="audio/mpeg">
+                    <source src="audios/i.ogg" type="audio/ogg">
                 </audio>
                 <audio class="audios" id="audioO"  preload="none"> 
-                    <source src="audios/o.mp3" type="audio/mpeg">
+                    <source src="audios/o.ogg" type="audio/ogg">
                 </audio>
                 <audio class="audios" id="audioU"  preload="none"> 
-                    <source src="audios/u.mp3" type="audio/mpeg">
+                    <source src="audios/u.ogg" type="audio/ogg">
                 </audio>
                 
                 <div class="contenidor">
-                    <div class="lletres" id="a" onclick="playAudioA()">A</div>
-                    <div class="dropDiv" id="contentDragA" vocal="a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="lletres" id="a" onclick="playAudio('A')">A</div>
+                    <div class="dropDiv" id="contentDragA0" vocal="a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="dropDiv" id="contentDragA1" vocal="a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="dropDiv" id="contentDragA2" vocal="a" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                 </div>
                 <div class="contenidor">
-                    <div class="lletres" id="e" onclick="playAudioE()">E</div>
-                    <div class="dropDiv" id="contentDragE" vocal="e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                </div>
-                <div class="conteclassnidor">
-                    <div class="lletres" id="i" onclick="playAudioI()">I</div>
-                    <div class="dropDiv" id="contentDragI" vocal="i" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="lletres" id="e" onclick="playAudio('E')">E</div>
+                    <div class="dropDiv" id="contentDragE0" vocal="e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="dropDiv" id="contentDragE1" vocal="e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="dropDiv" id="contentDragE2" vocal="e" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                 </div>
                 <div class="contenidor">
-                   <div class="lletres" id="o" onclick="playAudioO()">O</div> 
-                   <div class="dropDiv" id="contentDragO" vocal="o" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="lletres" id="i" onclick="playAudio('I')">I</div>
+                    <div class="dropDiv" id="contentDragI0" vocal="i" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="dropDiv" id="contentDragI1" vocal="i" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="dropDiv_"></div>
                 </div>
                 <div class="contenidor">
-                   <div class="lletres" id="u" onclick="playAudioU()">U</div> 
-                   <div class="dropDiv" id="contentDragU" vocal="u" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                   <div class="lletres" id="o" onclick="playAudio('O')">O</div> 
+                   <div class="dropDiv" id="contentDragO0" vocal="o" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                   <div class="dropDiv" id="contentDragO1" vocal="o" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                   <div class="dropDiv" id="contentDragO2" vocal="o" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                <div class="contenidor">
+                   <div class="lletres" id="u" onclick="playAudio('U')">U</div> 
+                   <div class="dropDiv" id="contentDragU0" vocal="u" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                   <div class="dropDiv" id="contentDragU1" vocal="u" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                   <div class="dropDiv_"></div>
                 </div>
                 <div class="objectsContent">
-                    <img src='img/abella.png'   id="abella"    class="imageDD" vocal="a"   ondragstart="drag(event)" >
-                    <img src='img/all.png'   id="all"       class="imageDD" vocal="a"   ondragstart="drag(event)">
+                    
                     <img src='img/arana.png'   id="araña"     class="imageDD" vocal="a"   ondragstart="drag(event)">
-                    
-                    <!--<img id="elefant"   class="imageDD" vocal="e" ondragstart="drag(event)">-->
+                    <img src='img/ulleres.png'   id="ulleres"   class="imageDD" vocal="u"  ondragstart="drag(event)">
                     <img src='img/escala.png'   id="escala"    class="imageDD" vocal="e" ondragstart="drag(event)">
-                    <img src='img/espasa.png'   id="espasa"    class="imageDD" vocal="e" ondragstart="drag(event)">
-                    <img src='img/estrella.png'   id="estrella"  class="imageDD" vocal="e"  ondragstart="drag(event)">
-                    
-                    <img src='img/illa.png'   id="illa"     class="imageDD" vocal="i"  ondragstart="drag(event)">
-                    <img src='img/imant.png'   id="imant"     class="imageDD" vocal="i"  ondragstart="drag(event)">
-                    
+                    <img src='img/all.png'   id="all"       class="imageDD" vocal="a"   ondragstart="drag(event)">
                     <img src='img/olla.png'   id="olla"      class="imageDD" vocal="o"  ondragstart="drag(event)">
+                    <img src='img/espasa.png'   id="espasa"    class="imageDD" vocal="e" ondragstart="drag(event)">
+                    <img src='img/ull.png'   id="ull"       class="imageDD" vocal="u"  ondragstart="drag(event)">
+                    <img src='img/illa.png'   id="illa"     class="imageDD" vocal="i"  ondragstart="drag(event)">
                     <img src='img/os.png'   id="os"        class="imageDD" vocal="o"  ondragstart="drag(event)">
                     <img src='img/ou.png'   id="ou"        class="imageDD" vocal="o"  ondragstart="drag(event)">
+                    <img src='img/estrella.png'   id="estrella"  class="imageDD" vocal="e"  ondragstart="drag(event)">
+                    <img src='img/imant.png'   id="imant"     class="imageDD" vocal="i"  ondragstart="drag(event)">
+                    <img src='img/abella.png'   id="abella"    class="imageDD" vocal="a"   ondragstart="drag(event)" >
                     
-                    <img src='img/ull.png'   id="ull"       class="imageDD" vocal="u"  ondragstart="drag(event)">
-                    <img src='img/ulleres.png'   id="ulleres"   class="imageDD" vocal="u"  ondragstart="drag(event)">
+                    <!--<img id="elefant"   class="imageDD" vocal="e" ondragstart="drag(event)">-->
                 </div>
             </div>
         </div>

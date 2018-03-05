@@ -4,6 +4,8 @@ function allowDrop(ev) {
 
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
+    
+    $(".dropDiv").css({border: ' 2px dashed black'});
 }
 
 
@@ -17,25 +19,26 @@ function drop(ev) {
     var targetVocal = $("#" + targetId).attr("vocal");
 
     var targetClass = $("#" + targetId).attr("class");
-
-    console.log("#" + objectId);
-    console.log("#" + targetId);
-    console.log(objectVocal);
-    console.log(targetVocal);
-
-    console.log(targetClass);
-
+    
+    console.log("targetClass" + targetClass);
     if (targetClass == "dropDiv") {
         if (objectVocal == targetVocal) {
             ev.target.appendChild(document.getElementById(objectId));
+            $("#" + targetId).attr("class","dropDiv_");
+            
+            $(".dropDiv_").css({border: 'none'});
+            $(".dropDiv").css({border: 'none'});
+            
         } else {
-            $("#" + targetId).css({border: ' 2px solid red'});
+            $("#" + targetId).css({border: ' 2px dashed red'});
             setTimeout(function () {
-                $("#" + targetId).css({border: ' 1px solid red'});
-            }, 400);
+                $(".dropDiv").css({border: 'none'});
+            }, 1000);
             setTimeout(function () {
-                $("#" + targetId).css({border: ' 1px solid black'});
-            }, 500);
+                $("#" + targetId).css({border: ' none'});
+            }, 1500);
+            
+            
         }
     }
 }

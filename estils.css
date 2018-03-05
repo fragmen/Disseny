@@ -235,6 +235,7 @@
     
     width: 100%;
     align-items: center;
+    min-height: 800px;
 }
 #footer{
     width: 100%;

@@ -4,10 +4,10 @@
     display: -moz-flex;
     display: -ms-flex;
     
-    -webkit-justify-content: space-around;
-    -moz-justify-content: space-around;
-    -ms-justify-content: space-around;
-    justify-content: space-around;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
 
     -webkit-align-items: center;
     -moz-align-items: center;
@@ -63,7 +63,7 @@
 .nom{
     margin-top: 10px;
     text-align: center;
-    width: 75%;
+    width: 30%;
 }
 
 .so{
@@ -76,6 +76,7 @@
     background-position: center;
     
     margin-right: 10px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
@@ -105,4 +106,37 @@
 }
 #tortuga{
     background-image: url(../img/tortuga.png);
+}
+
+#soCavall{
+    margin-left: 209px;
+    margin-top: 28px;
+}
+#soElefant{
+    margin-right: 150px;
+    margin-top: 20px;
+    
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+}
+#soOs{
+    margin-left: 135px;
+    margin-bottom: 95px;
+}
+#soPorc{
+    margin-right: 185px;
+    margin-top: 25px;
+    
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+}
+#soTigre{
+    margin-right: 155px;
+    margin-top: 5px;
+    
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
 }
